@@ -1,0 +1,91 @@
+/* Flowing Background CSS */
+.flowing-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.flow-layer {
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    will-change: transform, opacity;
+}
+
+.diagonal-line {
+    position: absolute;
+    background: linear-gradient(to right, transparent, var(--line-color), transparent);
+    will-change: transform, opacity;
+}
+
+.geometric-shape {
+    position: absolute;
+    will-change: transform, opacity;
+}
+
+.parallelogram {
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.pentagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.slanted-rect {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.diamond {
+    clip-path: polygon(0% 25%, 75% 0%, 100% 75%, 25% 100%);
+}
+
+.chevron-shape {
+    clip-path: polygon(0% 20%, 90% 0%, 100% 80%, 10% 100%);
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(var(--rotation, 0deg)); 
+    }
+    50% { 
+        transform: translateY(-10px) rotate(var(--rotation, 0deg)); 
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .flow-layer {
+        height: 120vh;
+    }
+    
+    .diagonal-line {
+        opacity: 0.8 !important;
+    }
+    
+    .geometric-shape {
+        opacity: 0.7 !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-float {
+        animation: none;
+    }
+    
+    .flow-layer {
+        transform: none !important;
+    }
+    
+    .geometric-shape {
+        transform: rotate(var(--rotation, 0deg)) !important;
+    }
+}

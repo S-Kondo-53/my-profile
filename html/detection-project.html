@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像処理による外観検知技術・データ管理アプリ開発 | 近藤周</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white bg-gradient-to-r from-[color:var(--bg-light-blue-1)] to-[color:var(--bg-light-blue-2)] min-h-screen relative">
+        <!-- Flowing Background -->
+        <div class="flowing-background"></div>
+
+        <!-- Header -->
+        <header class="header-thermal">
+            <nav class="nav-thermal">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <button onclick="navigateHome()" class="home-btn">Home</button>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                    <span class="text-gray-200">Project Story</span>
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="navigateHome()" class="back-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12,19 5,12 12,5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-20 relative z-10">
+            <!-- Hero Section -->
+            <section class="hero-thermal">
+                <div class="hero-bg">
+                    <img src="../assets/project-detection-2.png" alt="画像処理による外観検知技術・データ管理アプリ開発" class="hero-bg-img">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text-box">
+                        <div class="sharp-accent top-right"></div>
+                        <div class="sharp-accent bottom-left"></div>
+                        
+                        <p class="hero-subtitle">-Project Story-</p>
+                        <h1 class="hero-title">画像処理による外観検知技術・データ管理アプリ開発</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections -->
+            <div class="content-sections">
+                <!-- Section 1 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/field-research-2.png" alt="プロジェクトストーリー 1" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">"点検者の勘"に頼る外傷検査を、
+画像で誰でも再現可能に</h3>
+                                <p class="section-description">鉱山での外傷点検は、傷を見落とせば事故につながる重責作業だった。泥やホコリで視認性が悪く、補修判断は経験者の勘に依存。カット位置・長さ・進展度 を定量化し、作業者が迷わず判断できる仕組みが必要だった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/dashboard.png" alt="プロジェクトストーリー 2" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">スマホ撮影で外傷を自動検出、
+クラウドで全履歴を一元管理</h3>
+                                <p class="section-description">iPhone でタイヤ全周を撮影すると、AI がカット位置をマッピングし危険度を色分け表示。AWS に蓄積された履歴をダッシュボードで追跡し、補修や交換のタイミングを先読みする――"止めない点検" の世界を描いた。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/field-research-3.png" alt="プロジェクトストーリー 3" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">現場ヒアリング×シナリオ可視化で、
+"使われるUX"を設計</h3>
+                                <p class="section-description">豪鉱山を含む 3 現場へ出張し、作業導線・時間帯・照度を観察。得られたインサイトを カスタマージャーニー＋環境制約マップ に落とし込み、Figma でタスクフローをプロトタイプ化した。ワイヤは 3 日で 4 バージョンを作成し、UX リサーチ結果を即反映して合意形成を加速した。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/field-research-4.png" alt="プロジェクトストーリー 4" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">泥・照度変動・局所傷─
+画像解析の三重苦をどう乗り越えるか</h3>
+                                <p class="section-description">屋外光で露出が揺らぎ、泥と小石が傷と誤検知を招く。加えて全周を撮るとカットは画素 20 px に満たず、特徴が埋もれる。前処理ロバスト化と高分解能パノラマ生成を両立するアルゴリズムが必要だった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/cut-map.png" alt="プロジェクトストーリー 5" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">座標つき"カットマップ"生成
+カットの位置をデジタル化</h3>
+                                <p class="section-description">アノテーション画像の学習によるモデル生成、YOLOv5 派生モデルを微調整。検出バウンディングボックスをステレオ復元した 3D モデル上に射影し カットマップ を生成した。アプリは 撮影→解析→結果共有 をワンタップで完結。画像処理アルゴリズムを中心に 2 件の特許 を出願した。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/cutmanager-figma.png" alt="プロジェクトストーリー 6" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">北米鉱山でのPoC実施と、
+新たなビジネスモデルの構築へ</h3>
+                                <p class="section-description">自社のデータ分析によるサイドカット進展予測モデルとの組み合わせで、「現場のカットをデータ化」→「カットの予測によるタイヤマネジメント提案」のビジネスモデルを描く。コンセプトの価値が認められ、「データを集める」武器として2025年より北米鉱山にてテストを実施することになった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/WF.png" alt="プロジェクトストーリー 7" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">ユーザー視点を"絵にする"ことで、
+技術と現場を繋げられる</h3>
+                                <p class="section-description">出張ヒアリングで掴んだ課題を ユーザーシナリオ→Figma プロトタイプ に即変換した結果、開発・現場・経営陣が同じ絵を見ながら議論できた。次フェーズではクラウドに蓄積した外傷マップを分析し、カット進展予測 AI と自動補修提案 を実装して価値を拡張していく。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Section -->
+            <div class="back-to-top-section">
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <div class="sharp-accent top-right"></div>
+                    <svg class="back-icon" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+                    </svg>
+                    <span>Back to Top</span>
+                    <div class="pulse-overlay"></div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/project-common.js"></script>
+    <script src="../js/flowing-background.js"></script>
+</body>
+</html>

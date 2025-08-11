@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIVEプロジェクト2023 | 近藤周</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/alive-activity.css">
+    <link rel="stylesheet" href="../styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white bg-gradient-to-r from-[color:var(--bg-light-blue-1)] to-[color:var(--bg-light-blue-2)] min-h-screen relative">
+        <!-- Flowing Background -->
+        <div class="flowing-background"></div>
+
+        <!-- Header -->
+        <header class="header-alive">
+            <nav class="nav-alive">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <button onclick="navigateHome()" class="home-btn">Home</button>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                    <span class="text-gray-200">Activity</span>
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="navigateHome()" class="back-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12,19 5,12 12,5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-20 relative z-10">
+            <!-- Hero Section -->
+            <section class="hero-alive">
+                <div class="hero-bg">
+                    <div class="hero-bg-image" style="background-image: url('../assets/ryozanpark.png')"></div>
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-category">-Activity-</p>
+                        <h1 class="hero-title">ALIVEプロジェクト2023</h1>
+                        <h2 class="hero-subtitle">東京に１万人の村をつくる ― RYOZAN PARK</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Container -->
+            <div class="content-container">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar-nav">
+                    <div class="nav-items">
+                        <button class="nav-item active" data-section="0">
+                            <span class="nav-number">1.</span>
+                            <div class="nav-text">期待と不安を抱えて漕ぎ出す<br>─ チームビルディング─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="1">
+                            <span class="nav-number">2.</span>
+                            <div class="nav-text">多様性との対話が磨いたリーダーシップ<br>─ 異業種協働の醍醐味 ─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="2">
+                            <span class="nav-number">3.</span>
+                            <div class="nav-text">"恩送り"で描いた理想、第１回提案は高評価</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="3">
+                            <span class="nav-number">4.</span>
+                            <div class="nav-text">厳しい現実に向き合う<br>─ 第２回提案で突き付けられた壁 ─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="4">
+                            <span class="nav-number">5.</span>
+                            <div class="nav-text">本音をぶつけて再出発<br>─ 発散と収束のジェットコースター ─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="5">
+                            <span class="nav-number">6.</span>
+                            <div class="nav-text">「ないものはつくる。」<br>─ 最終提案に込めた願い ─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="6">
+                            <span class="nav-number">7.</span>
+                            <div class="nav-text">３か月で得た３つの変化 ─ 私の学び ─</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="7">
+                            <span class="nav-number">8.</span>
+                            <div class="nav-text">越境で得た視座を、これからの仕事へ</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="main-content-area">
+                    <div class="content-sections">
+                        <!-- Section 1 -->
+                        <div class="content-section animated-element" data-index="0">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">期待と不安を抱えて漕ぎ出す
+─ チームビルディング ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-1.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ALIVEプロジェクト初日、名刺代わりに交わしたのは肩書きではなく「これまでの人生で大切にしてきたもの」。
+
+互いのバックグラウンドや価値観を物語形式で共有し合うワークを通じ、"なぜここに来たのか"を腹落ちさせる時間になりました。
+
+「この人は数字を突き詰めるタイプだ」「この人はアイデアを広げる瞬発力がある」─ そうした強み・弱みが可視化され、同時に自分自身の思考のクセや価値観も整理されていく。
+
+スタート時点から"心理的安全性"が高まり、期待と不安が入り混じる空気が前向きな熱量へ変換された瞬間でした。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="content-section animated-element" data-index="1">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">多様性との対話が磨いたリーダーシップ
+─ 異業種協働の醍醐味 ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-2.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">「東京に１万人の村をつくる」ためのビジネスアイデアを生み出す。メンバーは計6名。業界も職種もばらばらだ。
+
+・細部にこだわる人
+・アイデアは無限に出るが発散しがちな人
+・発言までに時間がかかる慎重派…
+
+"異なる当たり前"がテーブルに並ぶたび、意見の衝突よりも"対話の設計"が問われると痛感しました。
+
+私は自然とファシリテーター兼ハブ役を引き受け、論点をホワイトボードに可視化しながら「今、何について議論しているか」を随時リフレーミング。
+
+この経験は、リーダーシップ＝牽引力＋合意形成力であることを体感させてくれました。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="content-section animated-element" data-index="2">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">"恩送り"で描いた理想、第１回提案は高評価</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-3.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">キックオフから３週間で迎えた中間発表１。私たちは「恩送りで資源を循環させる村」というコンセプトを提示しました。
+
+・住民同士がスキルや時間を"物々交換"する仕組み
+・「受け取った恩は次の誰かへ渡す」コミュニティ文化の醸成
+
+RYOZAN PARK の価値観とも親和性が高く、代表からは「思想は素晴らしい」とポジティブなフィードバックを獲得。
+
+チームの士気は一気に高まりました。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="content-section animated-element" data-index="3">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">厳しい現実に向き合う
+─ 第２回提案で突き付けられた壁 ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-4.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ところが１か月後の中間発表２では一転、
+
+「面白いが具体性が乏しい」
+
+という痛烈な指摘。
+
+・ビジネスモデルの収益構造
+・実装ステップとリソース見積もり
+・コミュニティ文化を守るガバナンス…
+
+"理想を語るだけでは村は育たない"という現実を突き付けられ、チームには焦りと負荷がのしかかりました。
+本業の合間を縫って深夜ミーティングを重ねる日々。
+
+それでも私はタスクを十分に委譲できず、"メンバーを信頼し切れていない自分"に気づかされます。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="content-section animated-element" data-index="4">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">本音をぶつけて再出発
+─ 発散と収束のジェットコースター ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-5.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">最終提案へ残された時間は３週間。
+
+各自がスライドに具体案を持ち寄る作戦を取りました。
+
+"村内通貨""子育てマッチング""スタートアップ支援拠点"…。
+
+議論は発散し過ぎたものの、「遠慮せず本音をぶつけ合う」雰囲気が生まれたことで、一体感はむしろ強化。
+私はカオスを受け止めつつ、「地域と中高生」という共通軸で収束を図り、"学びと挑戦を地域で支える村"へ舵を切りました。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div class="content-section animated-element" data-index="5">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">「ないものはつくる。」
+─ 最終提案に込めた願い ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-6.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">地域と共に、子どもたちと共に──"村長"を増やす加速装置
+
+1. 地域の中高生向け探究プログラム
+　・RYOZAN PARK の入居クリエイターがメンターとなり、プロジェクトベースドラーニングを提供
+
+2. バディシステム付きデジタル村民証
+　・学生と社会人が対になって"恩送り"を可視化
+
+3. フランチャイズ型コミュニティ拡張モデル
+　・同じ価値観を持つ"村長候補"育成講座で、全国各地に小さRYOZAN PARKを増殖
+
+代表の率直なコメントは
+「事業化にはまだ越える山があるが、"村らしさ"を守りつつ広げる方向性が見えた」
+
+採用には至りませんでしたが、チーム全員が納得するまで想いを注ぎ切った３か月のフィナーレでした。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 7 -->
+                        <div class="content-section animated-element" data-index="6">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">３か月で得た３つの変化 ─ 私の学び ─</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/activity-alive.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">自己メタ認知の深化、他者の鏡を通じて、自分の強み・弱みを客観視できるようになった。
+
+1. 合意形成型リーダーシップの体得
+2. 意見の多様性は前提。ファシリテーションで"衝突を価値に転換"する術を学んだ。
+3. 具体化への執念
+
+理想を語るだけでは届かない。"筋の通った具体性"で初めて人は動くことを痛感。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 8 -->
+                        <div class="content-section animated-element" data-index="7">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">越境で得た視座を、これからの仕事へ</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/alive-7.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ALIVEで培った**「多様性を束ねて進む力」と「理想を形に落とし込む思考」**を、今後は本業プロダクトにも注ぎ込みます。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Section -->
+            <div class="back-to-top-section">
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <div class="sharp-accent top-right"></div>
+                    <svg class="back-icon" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+                    </svg>
+                    <span>Back to Top</span>
+                    <div class="pulse-overlay"></div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/alive-activity.js"></script>
+    <script src="../js/flowing-background.js"></script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>近藤周 | 自己紹介サイト</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="min-h-screen relative">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen hidden" style="display: none;">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading...</div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="progress-bar" class="progress-bar"></div>
+
+        <!-- Vertical Navigation Line -->
+        <div class="vertical-nav">
+            <div class="nav-dots">
+                <button class="nav-dot active" data-section="home" aria-label="Home"></button>
+                <button class="nav-dot" data-section="about" aria-label="About"></button>
+                <button class="nav-dot" data-section="personality" aria-label="Personality"></button>
+                <button class="nav-dot" data-section="career" aria-label="Career"></button>
+                <button class="nav-dot" data-section="project" aria-label="Project"></button>
+                <button class="nav-dot" data-section="strength" aria-label="Strength"></button>
+                <button class="nav-dot" data-section="activities" aria-label="Activities"></button>
+                <button class="nav-dot" data-section="vision" aria-label="Vision"></button>
+                <button class="nav-dot" data-section="contact" aria-label="Contact"></button>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-items">
+                    <button class="nav-item active" data-section="home">
+                        Home
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="about">
+                        About
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="personality">
+                        Personality
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="career">
+                        Career
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="project">
+                        Project
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="strength">
+                        Strength
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="activities">
+                        Activities
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="vision">
+                        Vision
+                        <div class="active-indicator"></div>
+                    </button>
+                    <button class="nav-item" data-section="contact">
+                        Contact
+                        <div class="active-indicator"></div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Flowing Background -->
+        <!-- 背景はJavaScriptで動的に生成されます -->
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="section home-section">
+                <!-- Background Image -->
+                <div class="home-bg-image">
+                    <img src="assets/home-background.png" alt="ホーム背景" class="home-bg-img">
+                </div>
+
+                <!-- Text Content -->
+                <div class="home-text-content">
+                    <div class="home-text-box">
+                        <div class="sharp-accent top-right"></div>
+                        <div class="sharp-accent bottom-left"></div>
+                        
+                        <h1 class="home-title">
+                            目指すのは<br />
+                            <span class="handwritten-text">Engineering × Design</span><br />
+                            で、チームもお客様も<br />
+                            <span class="emphasis">感動</span>させること。
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Geometric Lines -->
+                <div class="geometric-line horizontal"></div>
+                <div class="geometric-line vertical"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="section about-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">About</h2>
+                    
+                    <div class="about-description animated-element">
+                        <div class="sharp-accent top-right"></div>
+                        <div class="sharp-accent bottom-left"></div>
+                        <p>
+                            「現場×UXで課題を形にするエンジニア／サービスデザイナー」<br />
+                            現場でのユーザー観察からアプリを0→1で立ち上げ、<br />
+                            リサーチ〜プロトタイプ〜PoCまで一気通貫で推進
+                        </p>
+                    </div>
+
+                    <div class="values-grid">
+                        <div class="value-item animated-element">
+                            <img src="assets/figma-tool.png" alt="まず'アウトプット'" class="value-bg">
+                            <div class="value-overlay"></div>
+                            <div class="value-content">
+                                <h3>まず"アウトプット"</h3>
+                                <p>Figma × スライド × コードで<br>とにかく作ってみる</p>
+                            </div>
+                        </div>
+                        <div class="value-item animated-element">
+                            <img src="assets/value-output.png" alt="ユーザー×自身の価値最大化" class="value-bg">
+                            <div class="value-overlay"></div>
+                            <div class="value-content">
+                                <h3>ユーザー×自身の<br>価値最大化</h3>
+                                <p>ユーザーにも、組織にも、<br>価値あるものを作る</p>
+                            </div>
+                        </div>
+                        <div class="value-item animated-element">
+                            <img src="assets/value-maximize.png" alt="ビジョンドリブン" class="value-bg">
+                            <div class="value-overlay"></div>
+                            <div class="value-content">
+                                <h3>ビジョンドリブン</h3>
+                                <p>そもそも・なぜ・なんのため<br>に真摯に向き合う</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Personality Section -->
+            <section id="personality" class="section personality-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">パーソナリティ</h2>
+                    
+                    <div class="personality-content">
+                        <div class="personality-image animated-element">
+                            <img src="assets/profile-image.png" alt="プロフィール写真" class="profile-img">
+                            <div class="sharp-accent top-right"></div>
+                        </div>
+
+                        <!-- Floating Icons -->
+                        <div class="floating-icons">
+                            <div class="icon-container code-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16,18 22,12 16,6"></polyline>
+                                    <polyline points="8,6 2,12 8,18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="icon-container settings-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path d="m12 1 1.68 5.3 5.32-1.68L17.32 9.3l5.68 1.7-5.68 1.7L19 17.32l-5.32-1.68L12 21l-1.68-5.3-5.32 1.68L6.68 12.7 1 11l5.68-1.7L5 4.68l5.32 1.68L12 1z"></path>
+                                </svg>
+                            </div>
+                            <div class="icon-container database-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="m3 5 0 14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                                    <path d="m3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
+                                </svg>
+                            </div>
+                            <div class="icon-container palette-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="13.5" cy="6.5" r=".5"></circle>
+                                    <circle cx="17.5" cy="10.5" r=".5"></circle>
+                                    <circle cx="8.5" cy="7.5" r=".5"></circle>
+                                    <circle cx="6.5" cy="12.5" r=".5"></circle>
+                                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="icon-container layers-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 2,7 12,12 22,7"></polygon>
+                                    <polyline points="2,17 12,22 22,17"></polyline>
+                                    <polyline points="2,12 12,17 22,12"></polyline>
+                                </svg>
+                            </div>
+                            <div class="icon-container pen-tool-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m12 19 7-7 3 3-7 7-3-3z"></path>
+                                    <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                    <path d="m2 2 7.586 7.586"></path>
+                                    <circle cx="11" cy="11" r="2"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="personality-info animated-element">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="3,11 22,2 13,21 11,13"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <h3>名前</h3>
+                                    <p>近藤　周</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="3,11 22,2 13,21 11,13"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <h3>性格</h3>
+                                    <p>・心配性, 用心深い, 慎重派</p>
+                                    <p>・熱中、コツコツ着実に</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="3,11 22,2 13,21 11,13"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <h3>思考の癖</h3>
+                                    <p>・ロジカルシンキング、戦略的に考える</p>
+                                    <p>・積上げ型思考</p>
+                                    <p>・抽象⇔具体の交互思考が得意</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Career History Section -->
+            <section id="career" class="section career-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">キャリア来歴</h2>
+                    
+                    <div class="career-content">
+                        <div class="career-timeline">
+                            <div class="timeline-line"></div>
+                            
+                            <div class="career-item animated-element" data-career="0">
+                                <div class="timeline-node"></div>
+                                <div class="career-card">
+                                    <div class="sharp-accent top-right"></div>
+                                    <div class="sharp-accent bottom-left"></div>
+                                    <h4>実車試験期間の短縮化、新規製品設計</h4>
+                                    <p>株式会社ブリヂストン　特殊タイヤ開発第２部</p>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item animated-element" data-career="1">
+                                <div class="timeline-node"></div>
+                                <div class="career-card">
+                                    <div class="sharp-accent top-right"></div>
+                                    <div class="sharp-accent bottom-left"></div>
+                                    <h4>サーモカメラによる外観故障検知技術開発</h4>
+                                    <p>株式会社ブリヂストン　リトレッド・ソリューション技術開発第３課</p>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item animated-element" data-career="2">
+                                <div class="timeline-node"></div>
+                                <div class="career-card">
+                                    <div class="sharp-accent top-right"></div>
+                                    <div class="sharp-accent bottom-left"></div>
+                                    <h4>3次元計測含む摩耗測定・データ管理アプリ開発</h4>
+                                    <p>株式会社ブリヂストン　ソリューション開発第２課</p>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item animated-element" data-career="3">
+                                <div class="timeline-node"></div>
+                                <div class="career-card">
+                                    <div class="sharp-accent top-right"></div>
+                                    <div class="sharp-accent bottom-left"></div>
+                                    <h4>画像処理による外観検知技術・データ管理アプリ開発</h4>
+                                    <p>株式会社ブリヂストン　ソリューション開発第２課</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="career-image animated-element">
+                            <div class="sharp-accent top-left"></div>
+                            <img src="assets/bridgestone-logo.png" alt="キャリア画像" class="career-img default-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=420&h=520&fit=crop&crop=center" alt="実車試験" class="career-img hover-img" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1581093804475-577d72e38aa0?w=420&h=520&fit=crop&crop=center" alt="サーモカメラ" class="career-img hover-img" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=420&h=520&fit=crop&crop=center" alt="3次元計測" class="career-img hover-img" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=420&h=520&fit=crop&crop=center" alt="画像処理" class="career-img hover-img" data-index="3">
+                            <div class="career-overlay"></div>
+                            <div class="career-title-overlay">
+                                <h4></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Project Stories Section -->
+            <section id="project" class="section project-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">プロジェクトストーリー</h2>
+                    
+                    <div class="projects-grid">
+                        <div class="project-item animated-element" data-project="thermal-project">
+                            <div class="sharp-accent top-right"></div>
+                            <div class="project-image">
+                                <img src="assets/project-thermal.png" alt="サーモプロジェクト" class="project-img">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-text">
+                                <p>見えない深部外傷を</p>
+                                <p>"予兆"のうちに捉えろ。</p>
+                            </div>
+                            <div class="view-project">
+                                <span>View Project</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item animated-element" data-project="mobile-project">
+                            <div class="sharp-accent top-right"></div>
+                            <div class="project-image">
+                                <img src="assets/project-mobile.png" alt="モバイルプロジェクト" class="project-img">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-text">
+                                <p>世界中のタイヤデータが</p>
+                                <p>集まる未来を目指して。</p>
+                            </div>
+                            <div class="view-project">
+                                <span>View Project</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item animated-element" data-project="detection-project">
+                            <div class="sharp-accent top-right"></div>
+                            <div class="project-image">
+                                <img src="assets/project-detection.png" alt="検知プロジェクト" class="project-img">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-text">
+                                <p>勘に頼る外傷検査を、</p>
+                                <p>画像で誰でも再現可能に。</p>
+                            </div>
+                            <div class="view-project">
+                                <span>View Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Strengths Section -->
+            <section id="strength" class="section strength-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">強み</h2>
+                    
+                    <div class="strengths-grid">
+                        <div class="strength-row">
+                            <div class="strength-item animated-element">
+                                <div class="strength-icon">
+                                    <svg class="icon" viewBox="0 0 72 72" fill="none">
+                                        <path d="M36 8L28 24H12L20 36L12 48H28L36 64L44 48H60L52 36L60 24H44L36 8Z" fill="var(--text-primary)"/>
+                                    </svg>
+                                </div>
+                                <div class="strength-content">
+                                    <h3>UX/UIデザイン力</h3>
+                                    <p>Figma × スライドで<br>コンセプト・要件の<br>"見える化"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item animated-element">
+                                <div class="strength-icon">
+                                    <svg class="icon" viewBox="0 0 72 72" fill="none">
+                                        <path d="M8 16H64V56H8V16ZM16 24V32H24V24H16ZM32 24V32H40V24H32ZM48 24V32H56V24H48ZM16 40V48H24V40H16ZM32 40V48H40V40H32ZM48 40V48H56V40H48Z" fill="var(--text-primary)"/>
+                                    </svg>
+                                </div>
+                                <div class="strength-content">
+                                    <h3>データ分析</h3>
+                                    <p>テーブルデータ、画像、<br>3Dデータなど幅広い<br>分析の力</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item animated-element">
+                                <div class="strength-icon">
+                                    <svg class="icon" viewBox="0 0 72 72" fill="none">
+                                        <path d="M20 12H52C56.4 12 60 15.6 60 20V52C60 56.4 56.4 60 52 60H20C15.6 60 12 56.4 12 52V20C12 15.6 15.6 12 20 12ZM28 24V36H44V24H28ZM28 44V48H44V44H28Z" fill="var(--text-primary)"/>
+                                    </svg>
+                                </div>
+                                <div class="strength-content">
+                                    <h3>アプリ開発</h3>
+                                    <p>モバイルアプリ開発<br>Webアプリ開発</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="strength-row">
+                            <div class="strength-item animated-element">
+                                <div class="strength-icon">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="3,11 22,2 13,21 11,13"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="strength-content">
+                                    <h3>現物現場</h3>
+                                    <p>エンドユーザーと直接<br>コミュニケーションをとり<br>要件を具体化</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item animated-element">
+                                <div class="strength-icon">
+                                    <svg class="icon" viewBox="0 0 72 72" fill="none">
+                                        <path d="M36 12L48 24L36 36L24 24L36 12ZM12 24L24 36L36 24L24 12L12 24ZM48 24L60 36L48 48L36 36L48 24ZM24 36L36 48L24 60L12 48L24 36Z" fill="var(--text-primary)"/>
+                                    </svg>
+                                </div>
+                                <div class="strength-content">
+                                    <h3>ファシリテーション</h3>
+                                    <p>ロジカルシンキングで<br>議論を交通整理</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Activities Section -->
+            <section id="activities" class="section activities-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">アクティビティ</h2>
+                </div>
+                
+                <div class="activities-container">
+                    <button class="activity-nav-button prev" id="activity-prev" aria-label="前のアクティビティ">
+                        <div class="nav-arrow"></div>
+                    </button>
+                    
+                    <div class="activities-scroll" id="activities-scroll">
+                        <div class="activity-item animated-element" data-activity="alive-activity">
+                            <div class="activity-image">
+                                <img src="assets/activity-alive.png" alt="ALIVEプロジェクト" class="activity-img">
+                                <div class="sharp-accent top-right"></div>
+                            </div>
+                            <h3>ALIVEプロジェクト2023</h3>
+                            <p>越境型のリーダーシップ研修に参加。異なる価値観のメンバーとともに作り上げた、答申先へのビジネス提案。</p>
+                        </div>
+                        
+                        <div class="activity-item animated-element" data-activity="design-activity">
+                            <div class="activity-image">
+                                <img src="assets/activity-designplex.png" alt="東京デザインプレックス" class="activity-img">
+                                <div class="sharp-accent top-right"></div>
+                            </div>
+                            <h3>東京デザインプレックス</h3>
+                            <p>東京デザインプレックスのUX/UI総合コースを受講。UXデザインの一連の流れを学び、0→1を生み出す力を身に着ける。</p>
+                        </div>
+                    </div>
+                    
+                    <button class="activity-nav-button next" id="activity-next" aria-label="次のアクティビティ">
+                        <div class="nav-arrow"></div>
+                    </button>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Career Vision Section -->
+            <section id="vision" class="section vision-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">キャリアビジョン</h2>
+                    
+                    <div class="vision-content">
+                        <div class="vision-image animated-element">
+                            <img src="assets/career-vision.png" alt="キャリアビジョン" class="vision-img">
+                            <div class="sharp-accent top-right"></div>
+                        </div>
+                        
+                        <div class="vision-text animated-element">
+                            <div class="vision-item">
+                                <div class="vision-icon">
+                                    <svg class="icon" viewBox="0 0 36 48" fill="none">
+                                        <path d="M18 8L12 24L18 40L24 24L18 8Z" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <p>デザインとエンジニアの観点を<br>持つサービスデザインのスペシャリスト</p>
+                            </div>
+                            
+                            <div class="vision-item">
+                                <div class="vision-icon">
+                                    <svg class="icon" viewBox="0 0 36 48" fill="none">
+                                        <path d="M18 8L12 24L18 40L24 24L18 8Z" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <p>0から新しいサービスを考え、<br>具体化するまでを一貫してリード</p>
+                            </div>
+                            
+                            <div class="vision-item">
+                                <div class="vision-icon">
+                                    <svg class="icon" viewBox="0 0 36 48" fill="none">
+                                        <path d="M18 8L12 24L18 40L24 24L18 8Z" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <p>チームで、新しいものを生み出すわくわく感を大切にしたい</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-arrow"></div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <div class="connecting-line"></div>
+            </div>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <h2 class="section-title animated-element">Contact</h2>
+                    
+                    <div class="contact-content animated-element">
+                        <div class="contact-box">
+                            <div class="sharp-accent top-right"></div>
+                            <p>お気軽にお問い合わせください</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" style="opacity: 0; transform: translateY(50px); pointer-events: none;">
+            <svg class="icon" viewBox="0 0 40 40" fill="none">
+                <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+            </svg>
+            <span>Top</span>
+        </button>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/flowing-background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

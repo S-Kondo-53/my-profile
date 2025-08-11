@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3次元計測による摩耗測定・データ管理アプリ開発 | 近藤周</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white bg-gradient-to-r from-[color:var(--bg-light-blue-1)] to-[color:var(--bg-light-blue-2)] min-h-screen relative">
+        <!-- Flowing Background -->
+        <div class="flowing-background"></div>
+
+        <!-- Header -->
+        <header class="header-thermal">
+            <nav class="nav-thermal">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <button onclick="navigateHome()" class="home-btn">Home</button>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                    <span class="text-gray-200">Project Story</span>
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="navigateHome()" class="back-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12,19 5,12 12,5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-20 relative z-10">
+            <!-- Hero Section -->
+            <section class="hero-thermal">
+                <div class="hero-bg">
+                    <img src="../assets/project-mobile-2.png" alt="3次元計測による摩耗測定・データ管理アプリ開発" class="hero-bg-img">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text-box">
+                        <div class="sharp-accent top-right"></div>
+                        <div class="sharp-accent bottom-left"></div>
+                        
+                        <p class="hero-subtitle">-Project Story-</p>
+                        <h1 class="hero-title">3次元計測による摩耗測定・データ管理アプリ開発</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections -->
+            <div class="content-sections">
+                <!-- Section 1 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/field-research-1.png" alt="プロジェクトストーリー 1" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">アナログなタイヤ点検作業を
+デジタル化、現場負担を減らす。</h3>
+                                <p class="section-description"> 鉱山タイヤの摩耗測定は、思いゲージと紙帳票を抱えて炎天下を歩く重労働だった。手書きデータは転記ミスが多発し、分析不能な"死蔵情報"へと埋もれていた。作業負荷を下げつつ外観データを資産化できる仕組が必要ではないか。そんな思いから始まった、ボトムアップのプロジェクトだった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/data-world.png" alt="プロジェクトストーリー 2" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">世界中のタイヤデータが集まる
+未来を目指して。</h3>
+                                <p class="section-description"> iPhone の LiDAR で溝深さをワンタップ測定し、そのまま自社クラウドへ自動アップロード。ダッシュボード上で摩耗進行を可視化し、点検時間を大幅短縮。計測ばらつきを抑えつつタイヤライフを最適化する、グローバル・データ基盤の実現を描いた。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/arlinelaser-figma.png" alt="プロジェクトストーリー 3" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">ベテラン４名を束ね、
+"理想の世界観" を図解し共通言語化</h3>
+                                <p class="section-description"> 初めてプロジェクトリーダーを任され、背景の異なる熟練 4 名を率いることに戸惑いもあった。私は強みである思考の具体化を活かし、Figma で"理想の点検フロー"と UI ワイヤーを一枚絵に落とし込んだ。課題→機能→データ活用の流れを可視化した結果、合意形成と役割分担を高速化できた。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/tire-pointcloud.png" alt="プロジェクトストーリー 4" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">高度な点群処理と直感的 UX──
+二つの壁を同時に越える</h3>
+                                <p class="section-description"> 屋外ノイズを含む LiDAR 点群から溝形状を抽出し、±2 mm 以内で計測するには独自アルゴリズムが必須だった。一方、現場作業者が迷わず操作できる UI/UX を iOS アプリに実装する必要がある。アルゴリズム精度・処理軽量化・UX デザインを同時に満たすことが最大の壁だった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/arlinelaser-mock.png" alt="プロジェクトストーリー 5" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">複雑な点群処理をワンタップで、
+作業フローに溶け込む UX を実現</h3>
+                                <p class="section-description"> 従来の３次元計測器の問題としてそのハンドリングの難しさとデータ分析の難しさがあった。誰でも、簡単に、すぐに過酷な現場で使うため、ワンタップで点群処理を実行し、深さ誤差 ±2 mm を達成。SwiftUI で現行点検フローをトレースした画面を設計し、"撮影→結果表示" を 10 秒で完了させた。点群処理・クラウド連携・UX アプローチを含む６件の特許を出願し、差別化を確立した。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/Home-background.png" alt="プロジェクトストーリー 6" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">ボトムアップから、
+正式な開発テーマへ</h3>
+                                <p class="section-description">この取り組みが評価され部門テーマへ正式移管された。常務役員、グローバルCTOへのプレゼンテーション。今後の社内のソリューションサービス、およびＤＸを体現するプロジェクトとして認知を得る。社内の構造設計、材料設計などの部署のメンバーからの認知も得て、ぜひ現場で使ってみたいというポジティブな声ももらう。ボトムアップの提案から、大きく動き出した。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/achievetogether.png" alt="プロジェクトストーリー 7" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">ビジョンの見える化が多様な才能を束ね、
+次の価値創造を加速させる</h3>
+                                <p class="section-description">抽象的な未来像を図解し共通言語に置き換えたことで、バックグラウンドの異なるメンバーが自発的に動き出した。またFigmaでのプロトタイプを示すことでメンバーにも作り出したいもののイメージが共有され、開発の効率化やアイデアが生まれた。今後はクラウドに集約したデータを活かし、摩耗予測 AI と補修提案機能 を追加する計画。リーダーとして"思考を形にする力"で、次の価値創造を牽引していった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Section -->
+            <div class="back-to-top-section">
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <div class="sharp-accent top-right"></div>
+                    <svg class="back-icon" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+                    </svg>
+                    <span>Back to Top</span>
+                    <div class="pulse-overlay"></div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/project-common.js"></script>
+    <script src="../js/flowing-background.js"></script>
+
+</body>
+</html>

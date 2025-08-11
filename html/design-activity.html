@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京デザインプレックス | 近藤周</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/design-activity.css">
+    <link rel="stylesheet" href="../styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white bg-gradient-to-r from-[color:var(--bg-light-blue-1)] to-[color:var(--bg-light-blue-2)] min-h-screen relative">
+        <!-- Flowing Background -->
+        <div class="flowing-background"></div>
+
+        <!-- Header -->
+        <header class="header-design">
+            <nav class="nav-design">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <button onclick="navigateHome()" class="home-btn">Home</button>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                    <span class="text-gray-200">Activity</span>
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="navigateHome()" class="back-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12,19 5,12 12,5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-20 relative z-10">
+            <!-- Hero Section -->
+            <section class="hero-design">
+                <div class="hero-bg">
+                    <div class="hero-bg-image" style="background-image: url('../assets/activity-designplex.png')"></div>
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-category">-Activity-</p>
+                        <h1 class="hero-title">東京デザインプレックス</h1>
+                        <h2 class="hero-subtitle">UX/UI総合コース</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Container -->
+            <div class="content-container">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar-nav">
+                    <div class="nav-items">
+                        <button class="nav-item active" data-section="0">
+                            <span class="nav-number">1.</span>
+                            <div class="nav-text">6か月で"考える–形にする"を<br>繰り返し、即戦力へ</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="1">
+                            <span class="nav-number">2.</span>
+                            <div class="nav-text">UXリサーチからUI実装まで<br>"全部入り"で学ぶ</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="2">
+                            <span class="nav-number">3.</span>
+                            <div class="nav-text">テーマ設定 &<br>プロトペルソナ策定</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="3">
+                            <span class="nav-number">4.</span>
+                            <div class="nav-text">デスクリサーチ<br>（PEST & 競合分析）</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="4">
+                            <span class="nav-number">5.</span>
+                            <div class="nav-text">ユーザーインタビュー &<br>ペルソナ精緻化</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="5">
+                            <span class="nav-number">6.</span>
+                            <div class="nav-text">親和図法・CJマップ・<br>To‑Beシナリオ</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="6">
+                            <span class="nav-number">7.</span>
+                            <div class="nav-text">リーンキャンバス &<br>ユーザーストーリーマップ</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="7">
+                            <span class="nav-number">8.</span>
+                            <div class="nav-text">MVP構築<br>（Figmaプロトタイプ）</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="8">
+                            <span class="nav-number">9.</span>
+                            <div class="nav-text">ユーザビリティテスト</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                        <button class="nav-item" data-section="9">
+                            <span class="nav-number">10.</span>
+                            <div class="nav-text">フィードバック反映 &<br>MVP改訂</div>
+                            <div class="active-indicator"></div>
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="main-content-area">
+                    <div class="content-sections">
+                        <!-- Section 1 -->
+                        <div class="content-section animated-element" data-index="0">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">6か月で"考える–形にする"を繰り返し、即戦力へ</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-1.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">本コースは夜間週2回／土日週1回いずれかの通学スタイルで、働きながらでも受講しやすいスケジュール設計です。
+
+カリキュラムは"UX/UI基礎Ⅰ・Ⅱ"から始まり、Design SprintやLean UXを実案件さながらに体験しながら、ユーザー価値を軸にした要件定義・情報設計へ進むフローで構成されています。
+
+授業ごとにアウトプットを重ねることで「調査で得た示唆をインタラクションやビジュアルに翻訳する力」が身につき、修了時にはポートフォリオとして提示できるプロトタイプを完成させます。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="content-section animated-element" data-index="1">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">UXリサーチからUI実装まで"全部入り"で学ぶ</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-2.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ユーザーインタビュー、行動観察、ヒューリスティック評価など定性・定量両面の調査手法を実践し、カスタマージャーニーとして可視化する工程を網羅。
+
+UIパートではFigma／FigJamに加え、iOS Human Interface GuidelinesとMaterial Design Guidelinesを横断的に扱い、デバイスごとに最適化した画面設計を習得します。</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="content-section animated-element" data-index="2">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">テーマ設定 & プロトペルソナ策定</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-3.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">コース初日、チームで扱うテーマ（課題領域）を定め、限られた情報からプロトペルソナを作成。仮説のユーザ属性・動機・課題をまとめ、後続リサーチで検証する足場を築きました。
+
+"ユーザーを想像し、共通認識を作る第一歩"として、チーム全員が同じ方向を向く起点になりました。
+
+成果物例:
+• テーマスコープ資料
+• プロトペルソナカード</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="content-section animated-element" data-index="3">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">デスクリサーチ（PEST & 競合分析）</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-4.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">公開情報を用いたPEST分析（Politics, Economy, Society, Technology）でマクロ環境を俯瞰し、競合プロダクトを機能軸・体験軸で比較。
+
+市場の"暗黙の当たり前"を可視化し、ポジショニングの余白を探りました。
+
+徹底的な調査により、"何が差別化要因となるか"の仮説が立てられるようになります。
+
+成果物例:
+• PEST分析マトリクス
+• 競合比較テーブル／2×2マップ</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="content-section animated-element" data-index="4">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">ユーザーインタビュー & ペルソナ精緻化</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-5.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">3〜5名へ半構造化インタビューを実施。発話ログをもとに洞察を抽出し、仮説→検証済みペルソナへアップデートしました。
+
+ユーザーの痛み・欲求を一次情報で把握する工程です。
+
+"生の声"から得られる気づきは、デスクリサーチだけでは見えない真のニーズを浮き彫りにします。
+
+成果物例:
+• インタビュー要約シート
+• 更新版ペルソナカード</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div class="content-section animated-element" data-index="5">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">親和図法・CJマップ・To‑Beシナリオ</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-6.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">インタビューの発話を付箋化して親和図法でクラスタリング → インサイトを軸にカスタマージャーニーマップを作成し、現状（As‑Is）の課題とTo‑Beシナリオを描きました。
+
+"バラバラの情報を構造化し、ストーリーに変換する"プロセスを通じて、ユーザー体験の全体像が見えてきます。
+
+成果物例:
+• 親和図
+• CJマップ
+• To‑Beシナリオストーリーボード</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 7 -->
+                        <div class="content-section animated-element" data-index="6">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">リーンキャンバス & ユーザーストーリーマップ</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-7.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ビジネス視点の骨格をリーンキャンバスに落とし込み、主要なジョブをユーザーストーリーマップに配置。
+
+価値命題とユーザーフローを同時に整理することで、開発優先度を客観的に決定できる状態を作りました。
+
+"ユーザー価値とビジネス価値の両立"を具体的に描けるようになります。
+
+成果物例:
+• リーンキャンバス1枚
+• ユーザーストーリーマップ</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 8 -->
+                        <div class="content-section animated-element" data-index="7">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">MVP構築（Figmaプロトタイプ）</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-8.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">ユーザーストーリーの上位列（スケルトン）をMVPと定義し、FigmaでIA → ワイヤーフレーム → ハイフィデリティUIを作成。
+
+インタラクションも付与して、クリック可能なプロトタイプを完成させました。
+
+"考えたことを形にし、触れる状態にする"ことで、チーム内外でのフィードバック品質が格段に向上します。
+
+成果物例:
+• Figmaプロトタイプ</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 9 -->
+                        <div class="content-section animated-element" data-index="8">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">ユーザビリティテスト</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-9.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">想定ユーザー3名にタスク駆動テストを実施し、画面録画と発話プロトコルを用いて定性面も記録、現状の課題を抽出しました。
+
+"作り手の想定"と"使い手の現実"のギャップを客観的に把握し、改善点を具体的に特定する工程です。
+
+成果物例:
+• テスト動画／サマリーレポート
+• 問題点一覧 & 優先度タグ</div>
+                            </div>
+                        </div>
+
+                        <!-- Section 10 -->
+                        <div class="content-section animated-element" data-index="9">
+                            <div class="content-card">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="sharp-accent bottom-left"></div>
+                                
+                                <h2 class="section-title">フィードバック反映 & MVP改訂</h2>
+                                
+                                <div class="section-image" style="background-image: url('../assets/tokyo-design-plex-10.png')">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                
+                                <div class="section-description">テスト結果から改善策を抽出→優先度順に実装。ユーザーの声をもとに機能を改善しました。
+
+最終報告資料にまとめ、受講生同士で発表しあいました。
+
+"検証→改善→再検証"のサイクルを回すことで、ユーザー中心設計の実践手法を体得できました。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Section -->
+            <div class="back-to-top-section">
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <div class="sharp-accent top-right"></div>
+                    <svg class="back-icon" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+                    </svg>
+                    <span>Back to Top</span>
+                    <div class="pulse-overlay"></div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/design-activity.js"></script>
+    <script src="../js/flowing-background.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サーモカメラプロジェクト | 近藤周</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/flowing-background.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-white bg-gradient-to-r from-[color:var(--bg-light-blue-1)] to-[color:var(--bg-light-blue-2)] min-h-screen relative">
+        <!-- Flowing Background -->
+        <div class="flowing-background"></div>
+
+        <!-- Header -->
+        <header class="header-thermal">
+            <nav class="nav-thermal">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <button onclick="navigateHome()" class="home-btn">Home</button>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                    <span>Project Story</span>
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="navigateHome()" class="back-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12,19 5,12 12,5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-20 relative z-10">
+            <!-- Hero Section -->
+            <section class="hero-thermal">
+                <div class="hero-bg">
+                    <img src="../assets/project-thermal.png" alt="サーモカメラによる外傷検知技術開発" class="hero-bg-img">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text-box">
+                        <div class="sharp-accent top-right"></div>
+                        <div class="sharp-accent bottom-left"></div>
+                        
+                        <p class="hero-subtitle">-Project Story-</p>
+                        <h1 class="hero-title">サーモカメラによる外傷検知技術開発</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Sections -->
+            <div class="content-sections">
+                <!-- Section 1 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/sidecut.png" alt="プロジェクトストーリー 1" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">見えない深部外傷を<br>"予兆"のうちに捉えろ。</h3>
+                                <p class="section-description">鉱山車両タイヤには高荷重・岩衝突に耐える卓越した耐久性が求められる。しかし泥にまみれた巨大タイヤの表面を肉眼で隅々まで点検するのは現実的ではなく、小さなカットは深部化してからようやく発覚することも多い。稼働停止や事故を未然に防ぐには、非接触で、迅速かつ高精度にカットの危険度を測れる仕組みが不可欠だった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/camera.png" alt="プロジェクトストーリー 2" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">車両を止めずライフを延ばす<br>"断トツ"ソリューション。</h3>
+                                <p class="section-description">サーモカメラで表面温度とカット部の温度差を一括取得し、温度 × 深度モデルで危険度を数秒で判定する──そんな未来を描いた。車両停止は顧客の機会損失に直結する。走行を妨げずに点検しタイヤライフを 10％以上 伸ばすことで、顧客と当社が Win-Win となるサービス像を設計した。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/field-research-0.png" alt="プロジェクトストーリー 3" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">光学メーカーと共創、現場の<br>"生の声"に向き合う。</h3>
+                                <p class="section-description">「1年以内に新サービスを立ち上げよ」というビジネス要件の下、私は主担当として光学機器メーカーとの提携スキームを策定。現場観察 → 温度解析 → プロトタイプ を 3週間サイクルで回し、スピードを最優先に開発を推進した。協業先と共に国内鉱山へ足を運び、現場ヒアリングと実機計測を同時に実施。両社が共有できる課題リストを作成し、ソリューションの輪郭を固めていった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/project-thermal.png" alt="プロジェクトストーリー 4" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">小さなカットの微温度差を捉えつつ<br>"全周マップ化"を両立せよ</h3>
+                                <p class="section-description">本当に検知したいカットは画面上でわずか 30 px に満たない。一方でカット位置をマップ化するにはタイヤ全景を捉える必要がある。近接撮影か俯瞰撮影か――その背反を解く鍵は、タイヤ構造上の特徴点を基準に位置と深さを同時推定するアルゴリズムだった。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/algorithm.png" alt="プロジェクトストーリー 5" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">深さ±5 mm を推定する<br>独自アルゴリズムを構築</h3>
+                                <p class="section-description">市場で得られるデータが限られる中、自社試験センターで速度・深さ・位置を変えたカットを再現し、温度と深度の相関データセットを構築。機械学習で刻印やリム位置を特徴量化し、接写画像でもカット座標を高精度に抽出する処理を実装した。システム構成や計測手法を含む 7 件の特許 を出願し、技術的優位性を確立。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="content-section reverse animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/ortc.png" alt="プロジェクトストーリー 6" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">技術資産を走行試験へ継承し、<br>室内試験の安全性向上に貢献</h3>
+                                <p class="section-description">海外市場での機材コスト・調達課題から量産化は見送られたが、構築したアルゴリズムと特許群は タイヤ走行試験の安全監視 に転用決定。試験中に温度異常を検知し、カット進展を予測することで作業員の安全確保と計画立案の最適化に寄与している。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="content-section animated-element">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="section-image">
+                                <img src="../assets/co-working.png" alt="プロジェクトストーリー 7" class="content-img">
+                                <div class="sharp-accent top-right"></div>
+                                <div class="hover-overlay"></div>
+                            </div>
+
+                            <div class="section-text">
+                                <h3 class="section-title">"共創設計図"が越境チームを<br>動かす推進力になる</h3>
+                                <p class="section-description">自社の枠を超え他社技術を組み込むことで、新たなサービス像を描けると実感した。価値創出の中心は常に顧客の課題であり、その解決にはクロスファンクショナルなチームをリードする必要がある。今回培った共創プロセスを活かし、今後も PoC を主導し、さらなる価値創造に挑む。</p>
+                                <div class="decorative-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Section -->
+            <div class="back-to-top-section">
+                <button onclick="scrollToTop()" class="back-to-top-btn">
+                    <div class="sharp-accent top-right"></div>
+                    <svg class="back-icon" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 8L12 16L20 24L28 16L20 8Z" fill="var(--text-secondary)"/>
+                    </svg>
+                    <span>Back to Top</span>
+                    <div class="pulse-overlay"></div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Kondo Shu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../js/project-common.js"></script>
+    <script src="../js/flowing-background.js"></script>
+</body>
+</html>
